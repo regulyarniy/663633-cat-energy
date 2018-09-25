@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Регулярный](https://up.htmlacademy.ru/adaptive/15/user/663633).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Кузьмичёв](https://htmlacademy.ru/profile/id342395).
 
 ---
 
