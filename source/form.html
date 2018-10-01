@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CAT ENERGY: Подбор программы</title>
+</head>
+
+<body class="body body--form">
+
+  <header class="header">
+    <a class="logo-main header__logo-main" href="index.html">
+      <img class="logo-main__image" src="img/logo-main.svg" alt="CAT ENERGY" width="33" height="38">
+    </a>
+    <h2 class="title-main header__title-main"><span class="title-main__first-part">CAT</span> ENERGY</h2>
+    <button class="button button--main-menu button--main-menu--close button--main-menu--open header__button" title="Открыть меню"></button>
+    <nav class="main-menu header__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__list-item">Главная</li>
+        <li class="main-menu__list-item">Каталог продукции</li>
+        <li class="main-menu__list-item">Подбор программы</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+
+    <section class="inquiry-form">
+      <h1 class="inquiry-form__title">Подбор программы</h1>
+      <form class="inquiry-form__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="inquiry-form__fieldset inquiry-form__fieldset--separated">
+          <b class="inquiry-form__caption">Заполните анкету и мы подберем программу питания для вашего кота</b>
+          <label class="inquiry-form__label label">
+            Имя:*
+            <input class="inquiry-form__input input input--text" type="text" placeholder="БАРСИК" required name="name">
+          </label>
+          <label class="inquiry-form__label label">
+            Вес (кг):*
+            <input class="inquiry-form__input input input--number" type="number" placeholder="7" required name="weight">
+          </label>
+          <label class="inquiry-form__label label">
+            Возраст (лет):*
+            <input class="inquiry-form__input input input--number" type="number" placeholder="7" name="age">
+          </label>
+        </p>
+        <p class="inquiry-form__fieldset inquiry-form__fieldset--separated">
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-radio" type="radio" value="fatloss" name="program-aim">
+            Похудение
+          </label>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-radio" type="radio" value="massgain" name="program-aim">
+            Набор массы
+          </label>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-radio" type="radio" value="unknown" name="program-aim">
+            Не знаю (нужен ваш совет)
+          </label>
+        </p>
+        <p class="inquiry-form__fieldset">
+          <b class="inquiry-form__fieldset-title">Контактные данные (владельца кота)</b>
+          <label class="inquiry-form__label label">
+            E-mail:*
+            <input class="inquiry-form__input input input--email" type="email" placeholder="kuklachev@gmail.com" required name="email">
+          </label>
+          <label class="inquiry-form__label label">
+            Телефон:*
+            <input class="inquiry-form__input input input--tel" type="tel" placeholder="8(960)900-60-90" required name="tel">
+          </label>
+        </p>
+        <p class="inquiry-form__fieldset">
+          <b class="inquiry-form__fieldset-title">Комментарий</b>
+          <textarea class="inquiry-form__textarea textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
+        </p>
+        <p class="inquiry-form__fieldset">
+          <b class="inquiry-form__fieldset-title">Дополнительно</b>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-checkbox" type="checkbox" value="sweetener" checked name="additional">
+            Сахарозаменитель
+          </label>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-checkbox" type="checkbox" value="water" name="additional">
+            Питьевая вода
+          </label>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-checkbox" type="checkbox" value="milk" name="additional">
+            Молоко
+          </label>
+          <label class="inquiry-form__label label">
+            <input class="inquiry-form__input input-checkbox" type="checkbox" value="vitamins" name="additional">
+            Витамины
+          </label>
+        </p>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+        <p class="inquiry-form__notice">* — Обязательные поля</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="visually-hidden">О нас</h2>
+
+    <section class="contacts">
+      <h3 class="visually-hidden">Наши контакты</h3>
+      <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716279457!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538314007644"
+        width="600" height="450" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <section class="info">
+      <h3 class="visually-hidden">Ссылки и прочее</h3>
+      <p class="title-main footer__title-main">
+        <span class="title-main__first-part">CAT</span> ENERGY
+      </p>
+      <ul class="social footer__social">
+        <li class="social__list-item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__list-item">
+          <a class="social__link social__link--ig" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__list-item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright footer__copyright">
+        <b class="copyright__title">HTML Academy</b>
+        <img class="copyright__image" src="img/htmlacademy.svg" alt="HTML Academy" width="60" height="60">
+      </p>
+    </section>
+
+  </footer>
+</body>
+
+</html>
