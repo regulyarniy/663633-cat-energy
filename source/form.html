@@ -29,74 +29,74 @@
   </header>
   <main class="page-main">
 
-    <section class="inquiry-form">
-      <h1 class="inquiry-form__title">Подбор программы</h1>
-      <form class="inquiry-form__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="inquiry-form__fieldset inquiry-form__fieldset--separated">
-          <b class="inquiry-form__caption">Заполните анкету и мы подберем программу питания для вашего кота</b>
-          <label class="inquiry-form__label label">
+    <section class="inquiry">
+      <h1 class="inquiry__title">Подбор программы</h1>
+      <form class="inquiry__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="inquiry__fieldset inquiry__fieldset--separated">
+          <b class="inquiry__caption">Заполните анкету и мы подберем программу питания для вашего кота</b>
+          <label class="inquiry__label label">
             Имя:*
-            <input class="inquiry-form__input input input--text" type="text" placeholder="БАРСИК" required name="name">
+            <input class="inquiry__input input input--text" type="text" placeholder="БАРСИК" required name="name">
           </label>
-          <label class="inquiry-form__label label">
+          <label class="inquiry__label label">
             Вес (кг):*
-            <input class="inquiry-form__input input input--number" type="number" placeholder="7" required name="weight">
+            <input class="inquiry__input input input--number" type="number" placeholder="7" required name="weight">
           </label>
-          <label class="inquiry-form__label label">
+          <label class="inquiry__label label">
             Возраст (лет):*
-            <input class="inquiry-form__input input input--number" type="number" placeholder="7" name="age">
+            <input class="inquiry__input input input--number" type="number" placeholder="7" name="age">
           </label>
         </p>
-        <p class="inquiry-form__fieldset inquiry-form__fieldset--separated">
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-radio" type="radio" value="fatloss" name="program-aim">
+        <p class="inquiry__fieldset inquiry__fieldset--separated">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-radio" type="radio" value="fatloss" name="program-aim">
             Похудение
           </label>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-radio" type="radio" value="massgain" name="program-aim">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-radio" type="radio" value="massgain" name="program-aim">
             Набор массы
           </label>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-radio" type="radio" value="unknown" name="program-aim">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-radio" type="radio" value="unknown" name="program-aim">
             Не знаю (нужен ваш совет)
           </label>
         </p>
-        <p class="inquiry-form__fieldset">
-          <b class="inquiry-form__fieldset-title">Контактные данные (владельца кота)</b>
-          <label class="inquiry-form__label label">
+        <p class="inquiry__fieldset">
+          <b class="inquiry__fieldset-title">Контактные данные (владельца кота)</b>
+          <label class="inquiry__label label">
             E-mail:*
-            <input class="inquiry-form__input input input--email" type="email" placeholder="kuklachev@gmail.com" required name="email">
+            <input class="inquiry__input input input--email" type="email" placeholder="kuklachev@gmail.com" required name="email">
           </label>
-          <label class="inquiry-form__label label">
+          <label class="inquiry__label label">
             Телефон:*
-            <input class="inquiry-form__input input input--tel" type="tel" placeholder="8(960)900-60-90" required name="tel">
+            <input class="inquiry__input input input--tel" type="tel" placeholder="8(960)900-60-90" required name="tel">
           </label>
         </p>
-        <p class="inquiry-form__fieldset">
-          <b class="inquiry-form__fieldset-title">Комментарий</b>
-          <textarea class="inquiry-form__textarea textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
+        <p class="inquiry__fieldset">
+          <b class="inquiry__fieldset-title">Комментарий</b>
+          <textarea class="inquiry__textarea textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
         </p>
-        <p class="inquiry-form__fieldset">
-          <b class="inquiry-form__fieldset-title">Дополнительно</b>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-checkbox" type="checkbox" value="sweetener" checked name="additional">
+        <p class="inquiry__fieldset">
+          <b class="inquiry__fieldset-title">Дополнительно</b>
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-checkbox" type="checkbox" value="sweetener" checked name="additional">
             Сахарозаменитель
           </label>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-checkbox" type="checkbox" value="water" name="additional">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-checkbox" type="checkbox" value="water" name="additional">
             Питьевая вода
           </label>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-checkbox" type="checkbox" value="milk" name="additional">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-checkbox" type="checkbox" value="milk" name="additional">
             Молоко
           </label>
-          <label class="inquiry-form__label label">
-            <input class="inquiry-form__input input-checkbox" type="checkbox" value="vitamins" name="additional">
+          <label class="inquiry__label label">
+            <input class="inquiry__input input-checkbox" type="checkbox" value="vitamins" name="additional">
             Витамины
           </label>
         </p>
         <button class="button button--primary" type="submit">Отправить заявку</button>
-        <p class="inquiry-form__notice">* — Обязательные поля</p>
+        <p class="inquiry__notice">* — Обязательные поля</p>
       </form>
     </section>
   </main>
