@@ -1,1 +1,11 @@
-@import "blocks/page-body.scss"
+//Imports
+
+//Normalize https://github.com/JohnAlbin/normalize-scss
+@import "normalize";
+@include normalize();
+//Fonts
+@import "fonts";
+//Variables
+@import "variables";
+//Blocks
+@import "blocks/page-body";
