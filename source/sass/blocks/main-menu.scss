@@ -1,3 +1,57 @@
 .main-menu {
+  width: 100%;
   background-color: #ffffff;
+}
+
+.main-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 66px;
+  text-align: center;
+  color: $color-jade;
+  text-transform: uppercase;
+  // WARNING: По макету рамка выходит за границы контейнера
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-menu__link {
+  color: inherit;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-menu__link--active {
+  position: relative;
+
+  border-bottom: 2px solid $color-salad;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
 }
