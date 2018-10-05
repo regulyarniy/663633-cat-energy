@@ -1,3 +1,22 @@
 .info {
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $color-stone;
+}
+
+.info__logo {
+  width: 128px;
+  height: auto;
+  min-height: 24px;
+  margin-bottom: 30px;
+}
+
+.info__social {
+  margin-bottom: 30px;
+}
+
+.info__copyright {
+  margin-bottom: 30px;
 }
