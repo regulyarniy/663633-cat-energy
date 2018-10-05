@@ -1,3 +1,44 @@
 .contacts {
   background-color: #ffffff;
 }
+
+.contacts__container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contacts__lead {
+  width: 50%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-secondary;
+  color: $color-jade;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-primary;
+  color: $color-content;
+  font-style: normal;
+}
+
+.contacts__map {
+  min-width: 320px;
+  min-height: 400px;
+  background-color: #f6f4f2;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__embed {
+  width: 100%;
+  min-height: 400px;
+}
