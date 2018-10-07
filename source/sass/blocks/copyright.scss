@@ -1,3 +1,29 @@
 .copyright {
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.copyright__link {
+  // WARNING: добавить состояния из стайлгайда
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.copyright__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-content;
+}
+
+.copyright__image {
+  width: 27;
+  height: auto;
 }

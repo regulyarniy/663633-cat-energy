@@ -4,19 +4,22 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: $color-stone;
+  padding-bottom: 20px;
 }
 
 .info__logo {
   width: 128px;
   height: auto;
   min-height: 24px;
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .info__social {
-  // margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .info__copyright {
-  margin-bottom: 30px;
+  margin: 0;
 }
