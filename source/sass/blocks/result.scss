@@ -29,8 +29,11 @@
   color: $color-content;
 }
 
-.result__data,
-.result__data tbody {
+.result__data {
+  display: block;
+}
+
+.result__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
