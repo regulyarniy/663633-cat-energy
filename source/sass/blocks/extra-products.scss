@@ -1,3 +1,124 @@
 .extra-products {
   background-color: #ffffff;
 }
+
+.extra-products__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-products__title {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 87px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-secondary;
+  font-style: normal;
+  border-bottom: 1px solid #cdcdcd;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: calc(100% - 33px);
+    display: block;
+    width: calc(50vw - 116px);
+    min-width: 53px;
+    height: 3px;
+    background-color: $color-salad;
+  }
+}
+
+.extra-products__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.extra-products__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra-products__name {
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-secondary;
+  color: $color-jade;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.extra-products__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.extra-products__prop {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-content;
+  font-style: normal;
+}
+
+.extra-products__link {
+  width: 100%;
+}
+
+.extra-products__promo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  min-height: 289px;
+  margin: 0;
+  padding-top: 185px;
+  padding-right: 55px;
+  padding-left: 55px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  background-color: $color-salad;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    display: block;
+    width: 56px;
+    height: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    transform: translate(-50%);
+  }
+}
