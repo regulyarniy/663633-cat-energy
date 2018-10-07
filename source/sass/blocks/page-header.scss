@@ -5,7 +5,6 @@
   padding-top: 11px;
   font-family: $font-secondary;
   background: #ffffff;
-  // WARNING: По макету рамка выходит за границы контейнера
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -13,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin-bottom: 16px;
 }
 
