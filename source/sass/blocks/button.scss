@@ -1,8 +1,9 @@
 .button {
   display: inline-block;
-  padding: 16px 27px;
-  font-size: 20px;
+  padding: 10px 27px;
+  font-size: 16px;
   line-height: 20px;
+  font-family: $font-secondary;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
@@ -22,5 +23,19 @@
   &:active {
     color: #99c684;
     background-color: #5eaa2f;
+  }
+}
+
+.button--secondary {
+  color: $color-content;
+  background-color: $color-stone;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #b9b9b9;
   }
 }

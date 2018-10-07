@@ -13,13 +13,13 @@
 }
 
 .social__item {
-  width: 30px;
-  height: 30px;
   display: flex;
-  margin-left: 25px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
 
   &:first-child {
     margin-left: 0;

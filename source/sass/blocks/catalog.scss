@@ -1,3 +1,40 @@
 .catalog {
   background-color: #ffffff;
 }
+
+.catalog__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $font-secondary;
+  text-align: center;
+  color: $color-jade;
+  font-style: normal;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 103px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  margin: 0;
+  list-style: none;
+}
+
+.catalog__show-more {
+  margin: 0;
+}

@@ -1,6 +1,6 @@
 .copyright {
-  background-color: #f2f2f2;
   width: 100%;
+  background-color: #f2f2f2;
 }
 
 .copyright__link {
@@ -14,13 +14,13 @@
 
 .copyright__title {
   display: inline-block;
-  vertical-align: middle;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   font-family: $font-primary;
-  font-style: normal;
-  font-weight: 400;
+  vertical-align: middle;
   color: $color-content;
+  font-style: normal;
 }
 
 .copyright__image {
