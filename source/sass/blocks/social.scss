@@ -1,0 +1,51 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social__link {
+  // WARNING: добавить состояния из стайлгайда!
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+    background-image: url("../img/icon-vk-mobile.svg");
+  }
+
+  &--ig {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-insta-mobile.svg");
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+    background-image: url("../img/icon-fb-mobile.svg");
+  }
+}

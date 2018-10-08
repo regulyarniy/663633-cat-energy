@@ -1,0 +1,42 @@
+.hero {
+  margin-bottom: 20px;
+  font-family: $font-secondary;
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color-salad 50%, transparent 50%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 320px auto;
+}
+
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  margin: 0 auto;
+  padding-top: 28px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-style: normal;
+}
+
+.hero__slogan {
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.hero__link {
+  width: 100%;
+}
