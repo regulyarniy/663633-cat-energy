@@ -7,3 +7,17 @@
   width: 190px;
   height: auto;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .logo-main__image {
+    width: 172px;
+    height: 57px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .logo-main__image {
+    width: 202px;
+    height: 60px;
+  }
+}

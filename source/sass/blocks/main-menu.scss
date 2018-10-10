@@ -49,13 +49,70 @@
 }
 
 .main-menu__link--active {
-  position: relative;
-
   border-bottom: 2px solid $color-salad;
 
   &:hover,
   &:focus,
   &:active {
     opacity: 1;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .main-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: auto;
+    min-width: 440px;
+  }
+
+  .main-menu__list {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .main-menu__item {
+    flex-grow: 1;
+    width: auto;
+    border: none;
+  }
+
+  .main-menu__container {
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-menu__link--active {
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .main-menu {
+    min-width: 480px;
+    max-width: 50%;
+    background-color: transparent;
+  }
+
+  .main-menu__list {
+    font-size: 20px;
+  }
+
+  .main-menu__item {
+    color: #ffffff;
+  }
+
+  .main-menu__link--active {
+    border-bottom-color: #ffffff;
   }
 }
