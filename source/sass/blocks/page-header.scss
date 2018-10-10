@@ -94,10 +94,12 @@
 
 @media (min-width: $breakpoint-desktop) {
   .page-header {
+    position: relative;
+    z-index: 2;
     width: 1220px;
     min-height: 60px;
     margin-bottom: -114px;
-    padding-top: 54px;
+    padding-top: 40px;
     padding-right: 70px;
     padding-left: 70px;
     background-color: transparent;

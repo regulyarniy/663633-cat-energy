@@ -39,3 +39,12 @@
     color: #b9b9b9;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .button {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

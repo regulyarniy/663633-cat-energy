@@ -108,11 +108,11 @@
     font-size: 20px;
   }
 
-  .main-menu__item {
+  .main-menu__item--light {
     color: #ffffff;
   }
 
-  .main-menu__link--active {
+  .main-menu__item--light .main-menu__link--active {
     border-bottom-color: #ffffff;
   }
 }
