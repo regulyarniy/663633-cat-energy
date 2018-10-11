@@ -25,6 +25,8 @@
   width: 100%;
   margin: 0;
   margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 18px;
   font-family: $font-primary;
   color: $color-content;
 }
@@ -179,4 +181,75 @@
   height: 6px;
   background-color: $color-salad;
   border-radius: 3px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .result {
+    padding-top: 50px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 63%, $color-stone 63%, $color-stone 100%);
+  }
+
+  .result__title {
+    margin-bottom: 70px;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .result__description {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .result__content {
+    justify-content: flex-start;
+  }
+
+  .result__row--framed {
+    width: 162px;
+    height: 72px;
+    margin-right: 42px;
+
+    &::before,
+    &::after {
+      width: 5%;
+    }
+  }
+
+  .result__heading--framed {
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    transform: none;
+  }
+
+  .result__cell--framed {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__row--inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 180px;
+    margin-top: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .result__heading--inline {
+    font-size: 20px;
+  }
+
+  .result__cell--inline {
+    margin-left: auto;
+    font-size: 20px;
+  }
 }
