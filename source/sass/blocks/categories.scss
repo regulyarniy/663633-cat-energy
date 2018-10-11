@@ -121,6 +121,10 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+  .categories__list {
+    margin-bottom: 25px;
+  }
+
   .categories__item {
     min-height: 375px;
     margin-bottom: 30px;

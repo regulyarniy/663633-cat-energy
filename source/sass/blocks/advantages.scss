@@ -62,3 +62,75 @@
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .advantages {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__title {
+    margin-bottom: 75px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    min-height: 605px;
+    margin: 0;
+  }
+
+  .advantages__item {
+    width: 50%;
+    min-height: 285px;
+    margin: 0;
+    padding-top: 115px;
+    padding-right: 105px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    counter-increment: advantageCounter;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(advantageCounter);
+      position: absolute;
+      top: -40px;
+      left: 120px;
+      z-index: 1;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-secondary;
+      vertical-align: top;
+      color: $color-stone;
+    }
+  }
+
+  .advantages__content {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .advantages {
+    border-bottom: none;
+  }
+
+  .advantages__list {
+    min-height: 230px;
+  }
+
+  .advantages__item {
+    width: 245px;
+    margin-right: 80px;
+    padding-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
