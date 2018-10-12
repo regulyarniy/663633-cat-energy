@@ -203,6 +203,7 @@
 @media (min-width: $breakpoint-tablet) {
   .result {
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #ffffff;
     background-image: linear-gradient(to bottom, #ffffff 63%, $color-stone 63%, $color-stone 100%);
   }
