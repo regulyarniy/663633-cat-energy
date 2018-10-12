@@ -96,32 +96,39 @@
 
     <section class="result">
       <div class="container result__container">
-        <h2 class="result__title">Живой пример</h2>
-        <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table class="result__data">
-          <tbody class="result__content">
-            <tr class="result__row result__row--framed">
-              <th class="result__heading result__heading--framed">снижение веса</th>
-              <td class="result__cell result__cell--framed">5 кг</td>
-            </tr>
-            <tr class="result__row result__row--framed">
-              <th class="result__heading result__heading--framed">затрачено времени</th>
-              <td class="result__cell result__cell--framed">60 дней</td>
-            </tr>
-            <tr class="result__row result__row--inline">
-              <th class="result__heading result__heading--inline">Затраты на питание:</th>
-              <td class="result__cell result__cell--inline"> 15 000 руб.</td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="result__image" src="img/before-mobile@1x.png" alt="Результат диеты" width="320" height="240">
-        <p class="result__сaption">
-          Было
-          <span class="result__progress-bar">
-            <span class="result__progress-filler"></span>
-          </span>
-          Стало
-        </p>
+        <div class="result__wrapper result__wrapper--text">
+          <h2 class="result__title">Живой пример</h2>
+          <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <table class="result__data">
+            <tbody class="result__content">
+              <tr class="result__row result__row--framed">
+                <th class="result__heading result__heading--framed">снижение веса</th>
+                <td class="result__cell result__cell--framed">5 кг</td>
+              </tr>
+              <tr class="result__row result__row--framed">
+                <th class="result__heading result__heading--framed">затрачено времени</th>
+                <td class="result__cell result__cell--framed">60 дней</td>
+              </tr>
+              <tr class="result__row result__row--inline">
+                <th class="result__heading result__heading--inline">Затраты на питание:</th>
+                <td class="result__cell result__cell--inline"> 15 000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="result__wrapper">
+          <div class="result__image">
+            <img class="result__before" src="img/before-mobile@1x.png" alt="Результат диеты" width="320" height="240">
+            <img class="result__after" src="img/after-mobile@1x.png" alt="Результат диеты" width="320" height="240">
+          </div>
+          <p class="result__сaption">
+            <span class="result__label">Было</span>
+            <span class="result__progress-bar">
+              <span class="result__progress-filler"></span>
+            </span>
+            <span class="result__label">Стало</span>
+          </p>
+        </div>
       </div>
     </section>
 
