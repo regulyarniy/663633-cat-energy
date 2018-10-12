@@ -2,3 +2,15 @@
   padding-top: 39px;
   background-color: #f2f2f2;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__container {
+    // flexbug fix
+    display: flex;
+    flex-direction: column;
+  }
+}
