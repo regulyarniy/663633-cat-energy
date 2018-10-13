@@ -174,3 +174,75 @@
     margin-right: 80px;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .inquiry {
+    padding-top: 194px;
+  }
+
+  .inquiry__container {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &--common-info {
+      padding: 0;
+    }
+  }
+
+  .inquiry__caption {
+    padding: 0;
+  }
+
+  .inquiry__common-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .inquiry__fieldgroup--common-info {
+    width: 570px;
+  }
+
+  .inquiry__fieldgroup--comment {
+    width: 100%;
+  }
+
+  .inquiry__fieldgroup--additional {
+    width: 100%;
+  }
+
+  .inquiry__fieldgroup-title {
+    &::before {
+      left: calc(100% - 573px);
+      width: calc(50vw - 47px);
+      min-width: 605px;
+    }
+  }
+
+  .inquiry__wrapper--contacts {
+    width: 570px;
+    margin-right: 80px;
+
+    &:nth-child(2n-1) {
+      margin-right: 0;
+    }
+  }
+
+  .inquiry__wrapper--additional {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+  .inqury__button {
+    width: 570px;
+    margin-right: 80px;
+  }
+}

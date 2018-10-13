@@ -48,55 +48,57 @@
         <b class="inquiry__caption">Заполните анкету и мы подберем программу питания для вашего кота</b>
       </div>
       <form class="inquiry__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="inquiry__fieldgroup">
-          <span class="container inquiry__container">
-            <span class="inquiry__wrapper">
-              <label class="label" for="name">Имя:*</label>
-              <input class="input input--text" type="text" placeholder="БАРСИК" required name="name" id="name">
-            </span>
-            <span class="inquiry__wrapper">
-              <label class="label" for="weight">Вес (кг):*</label>
-              <input class="input input--number" type="number" size="2" placeholder="7" required name="weight" id="weight">
-            </span>
-            <span class="inquiry__wrapper">
-              <label class="label" for="age">Возраст (лет):*</label>
-              <input class="input input--number" type="number" size="2" placeholder="7" name="age" id="age">
-            </span>
-          </span>
-        </p>
-        <p class="inquiry__fieldgroup">
-          <span class="container inquiry__container">
-            <span class="inqury__goal">
-              <span class="inquiry__wrapper inquiry__wrapper--goal">
-                <input class="input-radio" type="radio" value="fatloss" name="program-aim" id="fatloss">
-                <label class="label" for="fatloss">Похудение</label>
+        <div class="inquiry__common-info">
+          <p class="inquiry__fieldgroup inquiry__fieldgroup--common-info">
+            <span class="container inquiry__container inquiry__container--common-info">
+              <span class="inquiry__wrapper">
+                <label class="label" for="name">Имя:*</label>
+                <input class="input input--text" type="text" placeholder="БАРСИК" required name="name" id="name">
               </span>
-              <span class="inquiry__wrapper inquiry__wrapper--goal">
-                <input class="input-radio" type="radio" value="massgain" name="program-aim" id="massgain">
-                <label class="label" for="massgain">Набор массы</label>
+              <span class="inquiry__wrapper">
+                <label class="label" for="weight">Вес (кг):*</label>
+                <input class="input input--number" type="number" size="2" placeholder="7" required name="weight" id="weight">
               </span>
-              <span class="inquiry__wrapper inquiry__wrapper--goal">
-                <input class="input-radio" type="radio" value="unknown" name="program-aim" id="unknown">
-                <label class="label" for="unknown">Не знаю (нужен ваш совет)</label>
+              <span class="inquiry__wrapper">
+                <label class="label" for="age">Возраст (лет):*</label>
+                <input class="input input--number" type="number" size="2" placeholder="7" name="age" id="age">
               </span>
             </span>
-          </span>
-        </p>
+          </p>
+          <p class="inquiry__fieldgroup inquiry__fieldgroup--common-info">
+            <span class="container inquiry__container inquiry__container--common-info">
+              <span class="inqury__goal">
+                <span class="inquiry__wrapper inquiry__wrapper--goal">
+                  <input class="input-radio" type="radio" value="fatloss" name="program-aim" id="fatloss">
+                  <label class="label" for="fatloss">Похудение</label>
+                </span>
+                <span class="inquiry__wrapper inquiry__wrapper--goal">
+                  <input class="input-radio" type="radio" value="massgain" name="program-aim" id="massgain">
+                  <label class="label" for="massgain">Набор массы</label>
+                </span>
+                <span class="inquiry__wrapper inquiry__wrapper--goal">
+                  <input class="input-radio" type="radio" value="unknown" name="program-aim" id="unknown">
+                  <label class="label" for="unknown">Не знаю (нужен ваш совет)</label>
+                </span>
+              </span>
+            </span>
+          </p>
+        </div>
         <div class="container inquiry__container">
           <p class="inquiry__fieldgroup inquiry__fieldgroup--no-border">
             <b class="inquiry__fieldgroup-title">Контактные данные (владельца кота)</b>
-            <span class="inquiry__wrapper">
+            <span class="inquiry__wrapper inquiry__wrapper--contacts">
               <label class="label" for="email">E-mail:*</label>
               <input class="input input--email" type="email" placeholder="kuklachev@gmail.com" required name="email" id="email">
             </span>
-            <span class="inquiry__wrapper">
+            <span class="inquiry__wrapper inquiry__wrapper--contacts">
               <label class="label" for="tel">Телефон:*</label>
               <input class="input input--tel" type="tel" placeholder="8(960)900-60-90" required name="tel" id="tel">
             </span>
           </p>
-          <p class="inquiry__fieldgroup inquiry__fieldgroup--no-border">
+          <p class="inquiry__fieldgroup inquiry__fieldgroup--no-border inquiry__fieldgroup--comment">
             <b class="inquiry__fieldgroup-title">Комментарий</b>
-            <textarea class="inquiry__textarea textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
+            <textarea class="textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
           </p>
           <p class="inquiry__fieldgroup inquiry__fieldgroup--no-border inquiry__fieldgroup--additional">
             <b class="inquiry__fieldgroup-title">Дополнительно</b>
@@ -127,8 +129,8 @@
   <section class="contacts contacts--gray">
     <div class="container contacts__container">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <p class="contacts__lead">Приглашаем<br>к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</address>
     </div>
     <div class="contacts__map">
       <iframe class="contacts__embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716279457!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538314007644"></iframe>

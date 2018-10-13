@@ -19,3 +19,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .textarea {
+    width: 100%;
+  }
+}
