@@ -1,5 +1,9 @@
 .contacts {
   background-color: #ffffff;
+
+  &--gray {
+    background-color: $color-stone;
+  }
 }
 
 .contacts__container {
