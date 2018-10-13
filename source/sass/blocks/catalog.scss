@@ -73,3 +73,28 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .catalog {
+    padding-top: 80px;
+  }
+
+  .catalog__list {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
