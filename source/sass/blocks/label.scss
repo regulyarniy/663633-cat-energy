@@ -8,3 +8,10 @@
   text-transform: uppercase;
   font-style: normal;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

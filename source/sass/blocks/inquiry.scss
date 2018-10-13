@@ -15,6 +15,17 @@
   font-style: normal;
 }
 
+.inquiry__caption {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-secondary;
+  color: $color-jade;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
 .inquiry__form {
   margin: 0;
 }
@@ -25,6 +36,10 @@
   margin: 0;
   padding-top: 20px;
   border-bottom: 1px solid #ededed;
+
+  &--no-border {
+    border: none;
+  }
 }
 
 .inquiry__container {
@@ -39,17 +54,6 @@
   align-items: center;
   width: 100%;
   margin-bottom: 13px;
-}
-
-.inquiry__caption {
-  margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $font-secondary;
-  color: $color-jade;
-  text-transform: uppercase;
-  font-style: normal;
 }
 
 .inquiry__fieldgroup-title {
@@ -79,4 +83,94 @@
 
 .inqury__button {
   width: 100%;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .inquiry {
+    padding-bottom: 70px;
+  }
+
+  .inquiry__title {
+    margin-bottom: 57px;
+    font-size: 60px;
+  }
+
+  .inquiry__caption {
+    display: block;
+    width: 400px;
+    margin-bottom: 50px;
+    padding-right: 0;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .inquiry__fieldgroup {
+    margin-bottom: 50px;
+    border: none;
+
+    &--additional {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+  }
+
+  .inquiry__container {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .inqury__goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 195px;
+    padding: 25px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .inquiry__wrapper {
+    margin-bottom: 20px;
+
+    &--goal {
+      margin-bottom: 0;
+    }
+
+    &--additional {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .inquiry__fieldgroup-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 50%;
+      left: calc(100% - 73px);
+      width: calc(50vw - 250px);
+      min-width: 103px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 30px);
+      display: block;
+      width: 50vw;
+      min-width: 53px;
+      height: 3px;
+      background-color: $color-salad;
+    }
+  }
+
+  .inqury__button {
+    width: 283px;
+    margin-right: 80px;
+  }
 }
