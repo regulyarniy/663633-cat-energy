@@ -7,6 +7,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   font-family: $font-secondary;
@@ -37,4 +38,38 @@
 
 .catalog__show-more {
   margin: 0;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .catalog {
+    padding-top: 65px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    border: none;
+  }
+
+  .catalog__container {
+    justify-content: flex-start;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 572px;
+    margin-right: 60px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
