@@ -75,8 +75,6 @@
     min-height: 58px;
     margin: 0 auto;
     padding-top: 24px;
-    padding-right: 30px;
-    padding-left: 30px;
     border: none;
   }
 
@@ -84,6 +82,7 @@
     display: block;
     width: auto;
     margin: 0;
+    margin-right: auto;
     padding: 0;
   }
 
@@ -99,9 +98,8 @@
     width: 1220px;
     min-height: 60px;
     margin-bottom: -114px;
+    padding: 0;
     padding-top: 40px;
-    padding-right: 70px;
-    padding-left: 70px;
     background-color: transparent;
   }
 }
