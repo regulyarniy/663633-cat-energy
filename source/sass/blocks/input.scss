@@ -10,3 +10,11 @@
   text-transform: uppercase;
   font-style: normal;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

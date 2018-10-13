@@ -10,6 +10,7 @@
 //Global styles
 @import "global";
 //Blocks
+@import "blocks/button";
 @import "blocks/container";
 @import "blocks/page-body";
 @import "blocks/page-header";
@@ -31,7 +32,6 @@
 @import "blocks/input-radio";
 @import "blocks/textarea";
 @import "blocks/input-checkbox";
-@import "blocks/button";
 @import "blocks/catalog";
 @import "blocks/product";
 @import "blocks/show-more";

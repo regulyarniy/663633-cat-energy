@@ -2,3 +2,10 @@
   margin-right: 15px;
   border-color: #cdcdcd;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .input-radio {
+    width: 40px;
+    height: 40px;
+  }
+}

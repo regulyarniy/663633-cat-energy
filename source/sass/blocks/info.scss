@@ -23,3 +23,22 @@
 .info__copyright {
   margin: 0;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 150px;
+    padding-bottom: 0;
+  }
+
+  .info__logo {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .info__social {
+    margin: 0;
+    margin-right: auto;
+  }
+}

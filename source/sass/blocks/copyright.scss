@@ -25,5 +25,11 @@
 
 .copyright__image {
   width: 27;
-  height: auto;
+  height: 34;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .copyright {
+    width: 162px;
+  }
 }

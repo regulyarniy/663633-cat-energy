@@ -21,20 +21,21 @@
         </div>
         <nav class="main-menu page-header__main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item">
+            <li class="main-menu__item main-menu__item--light">
               <div class="container main-menu__container">
                 <a class="main-menu__link main-menu__link--active">Главная</a>
               </div>
             </li>
-            <li class="main-menu__item">
+            <li class="main-menu__item main-menu__item--light">
               <div class="container main-menu__container">
                 <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
               </div>
             </li>
-            <li class="main-menu__item">
+            <li class="main-menu__item main-menu__item--light">
               <div class="container main-menu__container">
                 <a class="main-menu__link" href="form.html">Подбор программы</a>
               </div>
+            </li>
             </li>
           </ul>
         </nav>
@@ -50,7 +51,7 @@
           Функциональное питание для котов
           <b class="hero__slogan">Занялся собой? Займись котом!</b>
         </p>
-        <img class="hero__image" src="img/index-can-mobile@1x.png" alt="Корм с курицей">
+        <img class="hero__image" src="img/index-can-mobile@1x.png" alt="Корм с курицей" width="280" height="271">
         <a class="hero__link button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -78,16 +79,16 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--health">
-            Функциональное питание содержит только полезные питательные вещества.
+            <span class="advantages__content">Функциональное питание содержит только полезные питательные вещества.</span>
           </li>
           <li class="advantages__item advantages__item--powder">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <span class="advantages__content">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
           </li>
           <li class="advantages__item advantages__item--change">
-            Замените один-два приема обычной еды на наше функциональное питание.
+            <span class="advantages__content">Замените один-два приема обычной еды на наше функциональное питание.</span>
           </li>
           <li class="advantages__item advantages__item--time">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <span class="advantages__content">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
           </li>
         </ul>
       </div>
@@ -95,32 +96,39 @@
 
     <section class="result">
       <div class="container result__container">
-        <h2 class="result__title">Живой пример</h2>
-        <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table class="result__data">
-          <tbody class="result__content">
-            <tr class="result__row result__row--framed">
-              <th class="result__heading result__heading--framed">снижение веса</th>
-              <td class="result__cell result__cell--framed">5 кг</td>
-            </tr>
-            <tr class="result__row result__row--framed">
-              <th class="result__heading result__heading--framed">затрачено времени</th>
-              <td class="result__cell result__cell--framed">60 дней</td>
-            </tr>
-            <tr class="result__row result__row--inline">
-              <th class="result__heading result__heading--inline">Затраты на питание:</th>
-              <td class="result__cell result__cell--inline"> 15 000 руб.</td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="result__image" src="img/before-mobile@1x.png" alt="Результат диеты" width="320" height="240">
-        <p class="result__сaption">
-          Было
-          <span class="result__progress-bar">
-            <span class="result__progress-filler"></span>
-          </span>
-          Стало
-        </p>
+        <div class="result__wrapper result__wrapper--text">
+          <h2 class="result__title">Живой пример</h2>
+          <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <table class="result__data">
+            <tbody class="result__content">
+              <tr class="result__row result__row--framed">
+                <th class="result__heading result__heading--framed">снижение веса</th>
+                <td class="result__cell result__cell--framed">5 кг</td>
+              </tr>
+              <tr class="result__row result__row--framed">
+                <th class="result__heading result__heading--framed">затрачено времени</th>
+                <td class="result__cell result__cell--framed">60 дней</td>
+              </tr>
+              <tr class="result__row result__row--inline">
+                <th class="result__heading result__heading--inline">Затраты на питание:</th>
+                <td class="result__cell result__cell--inline"> 15 000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="result__wrapper">
+          <div class="result__image">
+            <img class="result__before" src="img/before-mobile@1x.png" alt="Результат диеты" width="320" height="240">
+            <img class="result__after" src="img/after-mobile@1x.png" alt="Результат диеты" width="320" height="240">
+          </div>
+          <p class="result__сaption">
+            <span class="result__label">Было</span>
+            <span class="result__progress-bar">
+              <span class="result__progress-filler"></span>
+            </span>
+            <span class="result__label">Стало</span>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -129,8 +137,8 @@
   <section class="contacts">
     <div class="container contacts__container">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <p class="contacts__lead">Приглашаем<br>к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</address>
     </div>
     <div class="contacts__map">
       <iframe class="contacts__embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716279457!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538314007644"></iframe>
@@ -138,7 +146,7 @@
   </section>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="container page-footer__container">
       <h2 class="visually-hidden">О нас</h2>
 
       <section class="info">

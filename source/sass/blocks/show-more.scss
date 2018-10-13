@@ -43,3 +43,53 @@
 .show-more__link {
   width: 100%;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .show-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .show-more__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    height: 75%;
+    margin: 0;
+    padding: 0 38px 40px;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center 55px;
+    background-size: 60px 60px;
+    border: 1px #e6e6e6 solid;
+  }
+
+  .show-more__title {
+    width: 168px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .show-more__lead {
+    width: 168px;
+    margin-right: auto;
+    margin-bottom: 90px;
+    margin-left: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .show-more__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+}

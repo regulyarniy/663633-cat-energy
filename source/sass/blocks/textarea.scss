@@ -1,6 +1,6 @@
 .textarea {
   width: 100%;
-  padding-left: 15px;
+  padding: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -9,4 +9,19 @@
   text-transform: uppercase;
   font-style: normal;
   border-color: #cdcdcd;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .textarea {
+    height: 175px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .textarea {
+    width: 100%;
+  }
 }
