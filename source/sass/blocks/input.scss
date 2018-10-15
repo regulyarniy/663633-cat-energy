@@ -1,6 +1,7 @@
 .input {
   flex-grow: 1;
   flex-shrink: 1;
+  padding-right: 13px;
   padding-left: 15px;
   font-weight: 400;
   font-size: 16px;
@@ -9,6 +10,41 @@
   color: $color-content;
   text-transform: uppercase;
   font-style: normal;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 1px solid #e6e6e6;
+  transition: all 0.3s ease;
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 33px 13px;
+  }
+
+  &--tel {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 33px 20px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid $color-content;
+  }
+
+  &::placeholder {
+    color: $color-content;
+  }
+
+  &:invalid {
+    outline: none;
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -16,5 +52,13 @@
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+
+    &--email {
+      background-size: 36px 13px;
+    }
+
+    &--tel {
+      background-size: 36px 20px;
+    }
   }
 }
