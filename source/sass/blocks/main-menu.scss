@@ -49,6 +49,7 @@
 }
 
 .main-menu__link--active {
+  padding-bottom: 7px;
   border-bottom: 2px solid $color-salad;
 
   &:hover,
@@ -74,6 +75,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
   }
@@ -93,7 +95,7 @@
   }
 
   .main-menu__link--active {
-    margin-top: 2px;
+    margin-top: 9px;
   }
 }
 
