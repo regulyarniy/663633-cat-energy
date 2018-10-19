@@ -56,7 +56,11 @@
           Функциональное питание для котов
           <b class="hero__slogan">Занялся собой? Займись котом!</b>
         </p>
-        <img class="hero__image" src="img/index-can-mobile@1x.png" alt="Корм с курицей" width="280" height="271">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="hero__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм с курицей" width="280" height="271">
+        </picture>
         <a class="hero__link button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
