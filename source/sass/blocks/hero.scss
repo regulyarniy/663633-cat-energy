@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: 320px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .hero__container {
@@ -97,8 +101,12 @@
     margin-bottom: 80px;
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #65a93c 50%, #65a93c 100%);
     background-repeat: no-repeat, no-repeat;
-    background-position: right top;
-    background-size: 50% cover;
+    background-position: right top, center;
+    background-size: 50%, 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .hero__title {
@@ -111,7 +119,7 @@
 
   .hero__image {
     top: 140px;
-    left: 500px;
+    left: 460px;
     width: 522px;
     height: 499px;
   }
