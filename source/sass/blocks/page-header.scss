@@ -71,7 +71,7 @@
 @media (min-width: $breakpoint-tablet) {
   .page-header {
     justify-content: space-between;
-    width: 708px;
+    width: $content-tablet;
     min-height: 58px;
     margin: 0 auto;
     padding-top: 24px;
@@ -95,7 +95,7 @@
   .page-header {
     position: relative;
     z-index: 2;
-    width: 1220px;
+    width: $content-desktop;
     min-height: 60px;
     margin-bottom: -114px;
     padding: 0;

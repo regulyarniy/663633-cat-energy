@@ -8,16 +8,14 @@
 
 @media (min-width: $breakpoint-tablet) {
   .container {
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
+    width: $content-tablet;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
   .container {
-    width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: $content-desktop;
   }
 }

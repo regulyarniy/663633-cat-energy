@@ -57,10 +57,8 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
+    width: $content-tablet;
     margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 
   .catalog__item {
@@ -80,9 +78,7 @@
   }
 
   .catalog__list {
-    width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: $content-desktop;
   }
 
   .catalog__item {

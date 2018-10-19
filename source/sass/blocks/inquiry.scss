@@ -72,10 +72,10 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: calc(100% - 33px);
+    left: calc(100% - 40px);
     display: block;
     width: calc(50vw - 116px);
-    min-width: 53px;
+    min-width: 60px;
     height: 3px;
     background-color: $color-salad;
   }
@@ -117,8 +117,8 @@
   }
 
   .inquiry__container {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .inqury__goal {
@@ -181,8 +181,8 @@
   }
 
   .inquiry__container {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 0;
+    padding-left: 0;
 
     &--common-info {
       padding: 0;
@@ -197,10 +197,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1300px;
+    width: $content-desktop;
     margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
   }
 
   .inquiry__fieldgroup--common-info {

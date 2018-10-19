@@ -1,11 +1,65 @@
 .input-checkbox {
-  margin-right: 15px;
-  border-color: #cdcdcd;
+  position: absolute;
+  left: -9999px;
+}
+
+.input-checkbox + .label {
+  position: relative;
+  padding-left: 46px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-checkbox + .label::before,
+.input-checkbox:checked + .label::after {
+  content: "";
+  position: absolute;
+}
+
+.input-checkbox + .label::before {
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  transform: translateY(-50%);
+}
+
+.input-checkbox:checked + .label::after {
+  top: 3px;
+  left: 10px;
+  width: 10px;
+  height: 18px;
+  border-top: 2px solid $color-salad;
+  border-left: 2px solid $color-salad;
+  transform: rotate(-135deg);
+}
+
+.input-checkbox:hover + .label::before,
+.input-checkbox:focus + .label::before {
+  border-color: #bababa;
+}
+
+.input-checkbox:active + .label {
+  opacity: 0.3;
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .input-checkbox {
+  .input-checkbox + .label {
+    padding-left: 60px;
+    line-height: 40px;
+  }
+
+  .input-checkbox + .label::before {
     width: 40px;
     height: 40px;
+  }
+
+  .input-checkbox:checked + .label::after {
+    top: 7px;
+    left: 15px;
+    width: 12px;
+    height: 20px;
   }
 }
