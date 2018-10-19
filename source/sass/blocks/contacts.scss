@@ -84,6 +84,7 @@
 
   .contacts__map {
     min-height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
   }
 }
 
@@ -96,6 +97,7 @@
     position: absolute;
     top: 95px;
     left: calc(50% - 610px);
+    z-index: 1;
     width: 570px;
     min-height: 200px;
     padding-top: 50px;
@@ -103,5 +105,9 @@
     padding-bottom: 50px;
     padding-left: 77px;
     background-color: #ffffff;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
   }
 }
