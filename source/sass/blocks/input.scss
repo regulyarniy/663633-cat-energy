@@ -25,9 +25,17 @@
     background-size: 33px 13px;
   }
 
+  &--email:active {
+    background-image: url("../img/icon-mail-green.svg");
+  }
+
   &--tel {
     background-image: url("../img/icon-phone.svg");
     background-size: 33px 20px;
+  }
+
+  &--tel:active {
+    background-image: url("../img/icon-phone-green.svg");
   }
 
   &:hover,
@@ -50,6 +58,14 @@
 
   &--error {
     border: 1px solid #ff8282;
+  }
+
+  &--email.input--error {
+    background-image: url("../img/icon-mail-red.svg");
+  }
+
+  &--tel.input--error {
+    background-image: url("../img/icon-phone-red.svg");
   }
 }
 
