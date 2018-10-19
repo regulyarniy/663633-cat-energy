@@ -27,26 +27,37 @@
 }
 
 .social__link {
-  // WARNING: добавить состояния из стайлгайда!
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
 
   &--vk {
     width: 22px;
     height: 12px;
-    background-image: url("../img/icon-vk-mobile.svg");
   }
 
   &--ig {
     width: 16px;
     height: 16px;
-    background-image: url("../img/icon-insta-mobile.svg");
   }
 
   &--fb {
     width: 10px;
     height: 19px;
-    background-image: url("../img/icon-fb-mobile.svg");
+  }
+
+  & svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-salad;
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
 
@@ -57,8 +68,12 @@
   }
 
   .social__link {
-    // WARNING: добавить состояния из стайлгайда!
     &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--vk svg {
       width: 30px;
       height: 16px;
     }
@@ -68,7 +83,17 @@
       height: 23px;
     }
 
+    &--ig svg {
+      width: 23px;
+      height: 23px;
+    }
+
     &--fb {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--fb svg {
       width: 14px;
       height: 28px;
     }
