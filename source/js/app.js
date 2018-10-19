@@ -87,7 +87,7 @@ if (document.querySelectorAll("#map").length > 0) {
     var marker = new google.maps.Marker({
       position: pinPosition,
       map: map,
-      icon: "img/map-pin.png"
+      icon: "./img/map-pin.png"
     });
   };
 };
