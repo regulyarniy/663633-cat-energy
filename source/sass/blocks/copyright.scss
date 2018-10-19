@@ -4,12 +4,24 @@
 }
 
 .copyright__link {
+  position: relative; //IE fix
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   transition: all 0.3s ease;
+
+  &::before {
+    //IE fix for :active pseudoclass
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
 }
 
 .copyright__link:hover path,
