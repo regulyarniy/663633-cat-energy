@@ -4,12 +4,21 @@
 }
 
 .copyright__link {
-  // WARNING: добавить состояния из стайлгайда
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $color-salad;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 .copyright__title {
@@ -26,6 +35,10 @@
 .copyright__image {
   width: 27;
   height: 34;
+
+  & path {
+    transition: all 0.3s ease;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
