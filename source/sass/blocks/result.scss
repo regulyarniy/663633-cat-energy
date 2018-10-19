@@ -391,6 +391,14 @@
     margin-top: -20px;
   }
 
+  .result__before {
+    clip: rect(auto 305px auto auto);
+  }
+
+  .result__after {
+    clip: rect(auto auto auto 305px);
+  }
+
   .result__сaption {
     width: 610px;
     padding-left: 40px;
