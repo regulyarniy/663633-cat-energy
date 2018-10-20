@@ -22,11 +22,16 @@
     left: 0;
     display: block;
   }
-}
 
-.copyright__link:hover path,
-.copyright__link:focus path {
-  fill: $color-salad;
+  & svg {
+    transition: all 0.3s ease;
+    fill: #666666;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-salad;
+  }
 }
 
 .copyright__link:active {
