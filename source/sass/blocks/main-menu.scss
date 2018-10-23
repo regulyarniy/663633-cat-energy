@@ -24,6 +24,10 @@
   color: $color-jade;
   text-transform: uppercase;
   border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .main-menu__container {
@@ -56,6 +60,18 @@
   &:focus,
   &:active {
     opacity: 1;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .main-menu--interactive {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .main-menu--closed {
+    display: none;
   }
 }
 
