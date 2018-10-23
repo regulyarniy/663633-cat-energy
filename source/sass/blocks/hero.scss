@@ -6,7 +6,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 63.2%, transparent 63.2%, transparent 100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  // background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -22,7 +21,7 @@
 
 .hero__title {
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 26px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
