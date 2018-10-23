@@ -1,6 +1,6 @@
 .inquiry {
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 14px;
+  padding-bottom: 7px;
   background-color: #ffffff;
 }
 
@@ -16,7 +16,9 @@
 }
 
 .inquiry__caption {
-  margin-bottom: 40px;
+  display: block;
+  width: 230px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -38,7 +40,21 @@
   border-bottom: 1px solid #ededed;
 
   &--no-border {
+    padding-top: 35px;
     border: none;
+  }
+
+  &--main-info {
+    padding-bottom: 12px;
+  }
+
+  &--comment {
+    padding-top: 15px;
+  }
+
+  &--additional {
+    margin-bottom: 15px;
+    padding-top: 30px;
   }
 }
 
@@ -60,7 +76,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -83,7 +99,17 @@
 
 .inquiry__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 18px;
 }
+
+.inquiry__notice {
+  margin: 25px auto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-content;
+}
+
 
 @media (min-width: $breakpoint-tablet) {
   .inquiry {
