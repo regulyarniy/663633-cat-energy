@@ -97,15 +97,29 @@
   }
 
   .advantages__item {
-    width: 50%;
-    min-height: 285px;
+    width: 354px;
+    min-height: 315px;
     margin: 0;
-    padding-top: 115px;
+    margin-right: 30px;
+    padding-top: 111px;
     padding-right: 105px;
     padding-left: 0;
     font-size: 16px;
     line-height: 24px;
     counter-increment: advantageCounter;
+
+    &:nth-child(2n) {
+      width: 324px;
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      min-height: 290px;
+    }
+
+    &:nth-child(4) {
+      min-height: 290px;
+    }
 
     &::before {
       width: 80px;

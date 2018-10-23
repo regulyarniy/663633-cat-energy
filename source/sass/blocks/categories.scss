@@ -122,26 +122,28 @@
 
 @media (min-width: $breakpoint-tablet) {
   .categories__list {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .categories__item {
-    min-height: 375px;
+    display: block;
+    min-height: 372px;
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-right: 315px;
     padding-bottom: 60px;
     padding-left: 50px;
   }
 
   .categories__title {
+    margin-bottom: 25px;
     padding: 0;
     font-size: 36px;
     line-height: 37px;
 
     &::before {
-      top: 10px;
-      left: 400px;
+      top: 14px;
+      left: 398px;
       width: 200px;
       height: 200px;
     }
@@ -154,16 +156,17 @@
 
   .categories__title--slim::after {
     top: 0;
-    left: 430px;
+    left: 422px;
   }
 
   .categories__title--gain::after {
     top: 55px;
-    left: 350px;
+    left: 360px;
     width: 270px;
   }
 
   .categories__description {
+    margin-bottom: 57px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -171,11 +174,12 @@
   }
 
   .categories__link {
+    margin-top: auto;
     font-size: 20px;
     line-height: 20px;
-
     &::before {
-      height: 20px;
+      right: -10px;
+      height: 30px;
     }
   }
 }

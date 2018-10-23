@@ -52,7 +52,7 @@
 @media (min-width: $breakpoint-tablet) {
   .hero {
     min-height: 810px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     color: $color-jade;
     background: none;
   }
@@ -60,11 +60,13 @@
   .hero__container {
     position: relative;
     justify-content: flex-start;
+    padding-left: 90px;
   }
 
   .hero__title {
     max-width: 100%;
     margin: 0;
+    padding-top: 50px;
     padding-right: 25%;
     font-size: 60px;
     line-height: 60px;
@@ -72,15 +74,15 @@
   }
 
   .hero__slogan {
-    margin-top: 45px;
-    margin-bottom: 50px;
+    margin-top: 42px;
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .hero__image {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 0;
     z-index: -1;
     width: 709px;
