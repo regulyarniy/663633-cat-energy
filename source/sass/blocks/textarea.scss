@@ -16,7 +16,10 @@
 @media (min-width: $breakpoint-tablet) {
   .textarea {
     height: 175px;
-    padding: 20px;
+    padding-top: 11px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
     font-size: 20px;
     line-height: 30px;
   }

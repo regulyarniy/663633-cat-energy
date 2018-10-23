@@ -113,7 +113,8 @@
 
 @media (min-width: $breakpoint-tablet) {
   .inquiry {
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 72px;
   }
 
   .inquiry__title {
@@ -124,21 +125,35 @@
   .inquiry__caption {
     display: block;
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     padding-right: 0;
     padding-left: 40px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .inquiry__fieldgroup {
     margin-bottom: 50px;
     border: none;
 
+    &--main-info {
+      margin-bottom: 20px;
+    }
+
+    &--contacts {
+      margin-bottom: 25px;
+      padding-top: 25px;
+    }
+
+    &--comment {
+      margin-bottom: 33px;
+      padding-top: 20px;
+    }
+
     &--additional {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 
@@ -161,12 +176,20 @@
     margin-bottom: 20px;
 
     &--goal {
-      margin-bottom: 0;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &--additional {
-      width: 50%;
+      width: 283px;
       margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 60px;
+      }
     }
   }
 
@@ -193,11 +216,31 @@
       height: 3px;
       background-color: $color-salad;
     }
+
+    &--contacts {
+      margin-bottom: 76px;
+    }
+
+    &--comment {
+      margin-bottom: 76px;
+    }
+
+    &--additional {
+      margin-bottom: 58px;
+    }
   }
 
-  .inqury__button {
+  .inquiry__button {
+    align-self: center;
     width: 283px;
-    margin-right: 80px;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .inquiry__notice {
+    margin: auto 0;
+    font-size: 16px;
   }
 }
 
