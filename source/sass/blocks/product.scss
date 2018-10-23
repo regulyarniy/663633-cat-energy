@@ -86,8 +86,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 38px 40px;
-    background-image: linear-gradient(to bottom, #ffffff 25%, $color-stone 25%, $color-stone 100%);
+    padding-bottom: 47px;
+    background-image: linear-gradient(to bottom, #ffffff 24%, $color-stone 24%, $color-stone 100%);
     border: none;
   }
 
@@ -104,18 +104,20 @@
   .product__image {
     flex-grow: 0;
     width: 324px;
-    margin-bottom: 54px;
+    margin-bottom: 35px;
   }
 
   .product__wrapper {
     width: 100%;
     margin-bottom: 33px;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 
   .product__name {
     width: 100%;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     font-size: 20px;
     text-align: center;
   }
@@ -141,6 +143,7 @@
   }
 
   .product__order {
+    width: 249px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;

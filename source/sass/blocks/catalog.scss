@@ -47,7 +47,7 @@
 
 @media (min-width: $breakpoint-tablet) {
   .catalog {
-    padding-top: 65px;
+    padding-top: 38px;
   }
 
   .catalog__title {
@@ -68,7 +68,7 @@
 
   .catalog__item {
     width: 324px;
-    min-height: 572px;
+    min-height: 570px;
     margin-right: 60px;
 
     &:nth-child(2n) {
