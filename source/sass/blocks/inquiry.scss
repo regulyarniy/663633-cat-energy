@@ -1,6 +1,6 @@
 .inquiry {
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 14px;
+  padding-bottom: 7px;
   background-color: #ffffff;
 }
 
@@ -16,7 +16,9 @@
 }
 
 .inquiry__caption {
-  margin-bottom: 40px;
+  display: block;
+  width: 230px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -38,7 +40,21 @@
   border-bottom: 1px solid #ededed;
 
   &--no-border {
+    padding-top: 35px;
     border: none;
+  }
+
+  &--main-info {
+    padding-bottom: 12px;
+  }
+
+  &--comment {
+    padding-top: 15px;
+  }
+
+  &--additional {
+    margin-bottom: 15px;
+    padding-top: 30px;
   }
 }
 
@@ -60,7 +76,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -83,11 +99,22 @@
 
 .inquiry__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 18px;
 }
+
+.inquiry__notice {
+  margin: 25px auto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-content;
+}
+
 
 @media (min-width: $breakpoint-tablet) {
   .inquiry {
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 72px;
   }
 
   .inquiry__title {
@@ -98,21 +125,35 @@
   .inquiry__caption {
     display: block;
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     padding-right: 0;
     padding-left: 40px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .inquiry__fieldgroup {
     margin-bottom: 50px;
     border: none;
 
+    &--main-info {
+      margin-bottom: 20px;
+    }
+
+    &--contacts {
+      margin-bottom: 25px;
+      padding-top: 25px;
+    }
+
+    &--comment {
+      margin-bottom: 33px;
+      padding-top: 20px;
+    }
+
     &--additional {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 
@@ -135,12 +176,20 @@
     margin-bottom: 20px;
 
     &--goal {
-      margin-bottom: 0;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &--additional {
-      width: 50%;
+      width: 283px;
       margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 60px;
+      }
     }
   }
 
@@ -167,17 +216,38 @@
       height: 3px;
       background-color: $color-salad;
     }
+
+    &--contacts {
+      margin-bottom: 76px;
+    }
+
+    &--comment {
+      margin-bottom: 76px;
+    }
+
+    &--additional {
+      margin-bottom: 58px;
+    }
   }
 
-  .inqury__button {
+  .inquiry__button {
+    align-self: center;
     width: 283px;
-    margin-right: 80px;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .inquiry__notice {
+    margin: auto 0;
+    font-size: 16px;
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
   .inquiry {
-    padding-top: 194px;
+    padding-top: 187px;
+    padding-bottom: 84px;
   }
 
   .inquiry__container {
@@ -190,6 +260,7 @@
   }
 
   .inquiry__caption {
+    max-width: 370px;
     padding: 0;
   }
 
@@ -201,23 +272,36 @@
     margin: 0 auto;
   }
 
-  .inquiry__fieldgroup--common-info {
-    width: 570px;
-  }
+  .inquiry__fieldgroup {
+    &--common-info {
+      width: 570px;
+    }
 
-  .inquiry__fieldgroup--comment {
-    width: 100%;
-  }
+    &--comment {
+      width: 100%;
+    }
 
-  .inquiry__fieldgroup--additional {
-    width: 100%;
+    &--additional {
+      width: 100%;
+      margin-bottom: 30px;
+      padding-top: 35px;
+    }
+
+    &--contacts {
+      padding-top: 18px;
+    }
   }
 
   .inquiry__fieldgroup-title {
     &::before {
+      top: 22px;
       left: calc(100% - 573px);
       width: calc(50vw - 47px);
       min-width: 605px;
+    }
+
+    &::after {
+      top: 22px;
     }
   }
 
@@ -237,9 +321,13 @@
     &:nth-child(5n) {
       margin-right: 0;
     }
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
   }
 
-  .inqury__button {
+  .inquiry__button {
     width: 570px;
     margin-right: 80px;
   }

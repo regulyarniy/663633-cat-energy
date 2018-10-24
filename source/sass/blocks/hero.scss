@@ -3,10 +3,9 @@
   font-family: $font-secondary;
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 50%, transparent 50%, transparent 100%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 63.2%, transparent 63.2%, transparent 100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -22,7 +21,7 @@
 
 .hero__title {
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 26px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -53,7 +52,7 @@
 @media (min-width: $breakpoint-tablet) {
   .hero {
     min-height: 810px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     color: $color-jade;
     background: none;
   }
@@ -61,11 +60,13 @@
   .hero__container {
     position: relative;
     justify-content: flex-start;
+    padding-left: 90px;
   }
 
   .hero__title {
     max-width: 100%;
     margin: 0;
+    padding-top: 50px;
     padding-right: 25%;
     font-size: 60px;
     line-height: 60px;
@@ -73,15 +74,15 @@
   }
 
   .hero__slogan {
-    margin-top: 45px;
-    margin-bottom: 50px;
+    margin-top: 42px;
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .hero__image {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 0;
     z-index: -1;
     width: 709px;
@@ -109,18 +110,22 @@
     }
   }
 
+  .hero__container {
+    padding-left: 0;
+  }
+
   .hero__title {
     max-width: 100%;
-    margin-top: 220px;
+    margin-top: 172px;
     margin-right: auto;
     margin-left: 80px;
     padding-right: 50%;
   }
 
   .hero__image {
-    top: 140px;
-    left: 460px;
-    width: 522px;
+    top: 142px;
+    left: 451px;
+    width: 545px;
     height: 499px;
   }
 

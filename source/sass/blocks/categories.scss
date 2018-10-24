@@ -18,14 +18,14 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
-  padding-top: 35px;
+  padding-top: 30px;
   background-color: $color-stone;
 }
 
 .categories__title {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   padding-left: 70px;
   font-weight: 400;
   font-size: 24px;
@@ -83,7 +83,7 @@
 
 .categories__link {
   position: relative;
-  padding-right: 50px;
+  padding-right: 35px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -122,26 +122,28 @@
 
 @media (min-width: $breakpoint-tablet) {
   .categories__list {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .categories__item {
-    min-height: 375px;
+    display: block;
+    min-height: 372px;
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-right: 315px;
     padding-bottom: 60px;
     padding-left: 50px;
   }
 
   .categories__title {
+    margin-bottom: 25px;
     padding: 0;
     font-size: 36px;
     line-height: 37px;
 
     &::before {
-      top: 10px;
-      left: 400px;
+      top: 14px;
+      left: 398px;
       width: 200px;
       height: 200px;
     }
@@ -154,16 +156,17 @@
 
   .categories__title--slim::after {
     top: 0;
-    left: 430px;
+    left: 422px;
   }
 
   .categories__title--gain::after {
     top: 55px;
-    left: 350px;
+    left: 360px;
     width: 270px;
   }
 
   .categories__description {
+    margin-bottom: 57px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -171,16 +174,22 @@
   }
 
   .categories__link {
+    margin-top: auto;
     font-size: 20px;
     line-height: 20px;
 
     &::before {
-      height: 20px;
+      right: -10px;
+      height: 30px;
     }
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
+  .categories {
+    margin-bottom: 40px;
+  }
+
   .categories__list {
     justify-content: space-between;
   }
@@ -191,10 +200,11 @@
   }
 
   .categories__title {
+    margin-bottom: 74px;
     padding-left: 165px;
 
     &::before {
-      top: -32px;
+      top: -30px;
       left: 0;
       width: 100px;
       height: 100px;
@@ -206,13 +216,17 @@
     }
   }
 
+  .categories__description {
+    margin-bottom: 30px;
+  }
+
   .categories__title--slim::after {
-    top: -40px;
-    left: 10px;
+    top: -36px;
+    left: 15px;
   }
 
   .categories__title--gain::after {
-    top: -12px;
+    top: -8px;
     left: -17px;
     width: 135px;
   }

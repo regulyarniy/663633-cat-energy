@@ -24,6 +24,10 @@
   color: $color-jade;
   text-transform: uppercase;
   border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .main-menu__container {
@@ -59,13 +63,25 @@
   }
 }
 
+@media (max-width: $breakpoint-mobile) {
+  .main-menu--interactive {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .main-menu--closed {
+    display: none;
+  }
+}
+
 @media (min-width: $breakpoint-tablet) {
   .main-menu {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: auto;
-    min-width: 440px;
+    min-width: 476px;
   }
 
   .main-menu__list {
@@ -84,6 +100,10 @@
     flex-grow: 1;
     width: auto;
     border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 
   .main-menu__container {
@@ -101,7 +121,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   .main-menu {
-    min-width: 480px;
+    min-width: 514px;
     max-width: 50%;
     background-color: transparent;
   }

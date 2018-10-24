@@ -2,6 +2,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 0;
+  height: 45px;
   padding-right: 13px;
   padding-left: 15px;
   font-weight: 400;
@@ -22,7 +23,7 @@
 
   &--email {
     background-image: url("../img/icon-mail.svg");
-    background-size: 33px 13px;
+    background-size: 45px 13px;
   }
 
   &--email:active {
@@ -31,7 +32,7 @@
 
   &--tel {
     background-image: url("../img/icon-phone.svg");
-    background-size: 33px 20px;
+    background-size: 45px 20px;
   }
 
   &--tel:active {
@@ -72,6 +73,7 @@
 @media (min-width: $breakpoint-tablet) {
   .input {
     height: 52px;
+    padding-left: 20px;
     font-size: 20px;
     line-height: 20px;
 
