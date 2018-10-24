@@ -1,30 +1,29 @@
-if (document.querySelector(".page-header__button")) {
-  document.querySelector(".page-header__button").classList.remove("visually-hidden");
-  document.querySelector(".main-menu").classList.add("main-menu--interactive");
-  document.querySelector(".main-menu").classList.add("main-menu--closed");
-  document.querySelector(".page-header__button").classList.add("page-header__button--open");
-  document.querySelector(".page-header__button").classList.remove("page-header__button--close");
+(function () {
+  if (document.querySelector(".page-header__button")) {
+    var menuToogle = document.querySelector(".page-header__button"),
+      menu = document.querySelector(".main-menu"),
+      toggleOpenClass = "page-header__button--open",
+      toggleCloseClass = "page-header__button--close",
+      menuClosedClass = "main-menu--closed";
 
-  document.querySelector(".page-header__button").addEventListener("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    if (this.classList.contains("page-header__button--open")) {
-      this.classList.remove("page-header__button--open");
-      this.classList.add("page-header__button--close");
-      document.querySelector(".main-menu").classList.remove("main-menu--closed");
-    } else {
-      this.classList.add("page-header__button--open");
-      this.classList.remove("page-header__button--close");
-      document.querySelector(".main-menu").classList.add("main-menu--closed");
-    }
-  })
+    menuToogle.classList.remove("visually-hidden");
+    menu.classList.add("main-menu--interactive");
+    menu.classList.add(menuClosedClass);
+    menuToogle.classList.add(toggleOpenClass);
+    menuToogle.classList.remove(toggleCloseClass);
 
-  window.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27 && !document.querySelector(".main-menu").classList.contains('main-menu--closed')) {
-    evt.preventDefault();
-    document.querySelector(".page-header__button").classList.add("page-header__button--open");
-    document.querySelector(".page-header__button").classList.remove("page-header__button--close");
-    document.querySelector(".main-menu").classList.add("main-menu--closed");
-  };
-});
-}
+    menuToogle.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (menuToogle.classList.contains(toggleOpenClass)) {
+        menuToogle.classList.remove(toggleOpenClass);
+        menuToogle.classList.add(toggleCloseClass);
+        menu.classList.remove(menuClosedClass);
+      } else {
+        menuToogle.classList.add(toggleOpenClass);
+        menuToogle.classList.remove(toggleCloseClass);
+        menu.classList.add(menuClosedClass);
+      }
+    })
+  }
+}());
