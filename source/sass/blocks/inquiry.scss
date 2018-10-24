@@ -246,7 +246,8 @@
 
 @media (min-width: $breakpoint-desktop) {
   .inquiry {
-    padding-top: 194px;
+    padding-top: 187px;
+    padding-bottom: 84px;
   }
 
   .inquiry__container {
@@ -259,6 +260,7 @@
   }
 
   .inquiry__caption {
+    max-width: 370px;
     padding: 0;
   }
 
@@ -270,23 +272,36 @@
     margin: 0 auto;
   }
 
-  .inquiry__fieldgroup--common-info {
-    width: 570px;
-  }
+  .inquiry__fieldgroup {
+    &--common-info {
+      width: 570px;
+    }
 
-  .inquiry__fieldgroup--comment {
-    width: 100%;
-  }
+    &--comment {
+      width: 100%;
+    }
 
-  .inquiry__fieldgroup--additional {
-    width: 100%;
+    &--additional {
+      width: 100%;
+      margin-bottom: 30px;
+      padding-top: 35px;
+    }
+
+    &--contacts {
+      padding-top: 18px;
+    }
   }
 
   .inquiry__fieldgroup-title {
     &::before {
+      top: 22px;
       left: calc(100% - 573px);
       width: calc(50vw - 47px);
       min-width: 605px;
+    }
+
+    &::after {
+      top: 22px;
     }
   }
 
@@ -306,9 +321,13 @@
     &:nth-child(5n) {
       margin-right: 0;
     }
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
   }
 
-  .inqury__button {
+  .inquiry__button {
     width: 570px;
     margin-right: 80px;
   }
