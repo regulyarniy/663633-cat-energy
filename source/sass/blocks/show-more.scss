@@ -93,3 +93,10 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+
+    .show-more__title {
+      margin-bottom: 25px;
+    }
+}

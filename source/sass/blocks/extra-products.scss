@@ -245,16 +245,19 @@
   .extra-products__title {
     width: 100%;
     min-height: 192px;
+    padding-top: 73px;
     padding-left: 0;
     border: none;
 
     &::before {
+      top: 96px;
       left: calc(100% - 700px);
       width: calc(50vw + 80px);
       min-width: 722px;
     }
 
     &::after {
+      top: 96px;
       right: calc(100% + 40px);
     }
   }
@@ -270,6 +273,8 @@
     align-items: center;
     height: 72px;
     padding: 0;
+    border-right: none;
+    border-left: none;
 
     &:first-child {
       border-top: 1px solid #cdcdcd;
@@ -320,7 +325,7 @@
     }
 
     &::before {
-      top: 42px;
+      top: 62px;
       left: 50%;
       transform: translateX(-50%);
     }
