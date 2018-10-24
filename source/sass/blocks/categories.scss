@@ -177,6 +177,7 @@
     margin-top: auto;
     font-size: 20px;
     line-height: 20px;
+
     &::before {
       right: -10px;
       height: 30px;
@@ -185,6 +186,10 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
+  .categories {
+    margin-bottom: 40px;
+  }
+
   .categories__list {
     justify-content: space-between;
   }
@@ -195,10 +200,11 @@
   }
 
   .categories__title {
+    margin-bottom: 74px;
     padding-left: 165px;
 
     &::before {
-      top: -32px;
+      top: -30px;
       left: 0;
       width: 100px;
       height: 100px;
@@ -210,13 +216,17 @@
     }
   }
 
+  .categories__description {
+    margin-bottom: 30px;
+  }
+
   .categories__title--slim::after {
-    top: -40px;
-    left: 10px;
+    top: -36px;
+    left: 15px;
   }
 
   .categories__title--gain::after {
-    top: -12px;
+    top: -8px;
     left: -17px;
     width: 135px;
   }

@@ -148,6 +148,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   .advantages {
+    margin-bottom: 80px;
     border-bottom: none;
   }
 
@@ -157,8 +158,22 @@
 
   .advantages__item {
     width: 245px;
+    min-height: 230px;
     margin-right: 80px;
     padding-right: 0;
+
+    &:nth-child(2n) {
+      width: 245px;
+      margin-right: 80px;
+    }
+
+    &:nth-child(3) {
+      min-height: 230px;
+    }
+
+    &:nth-child(4) {
+      min-height: 230px;
+    }
 
     &:last-child {
       margin-right: 0;

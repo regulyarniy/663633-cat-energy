@@ -362,7 +362,9 @@
 
 @media (min-width: $breakpoint-desktop) {
   .result {
-    background-image: linear-gradient(to bottom, #ffffff 33%, $color-stone 33%, $color-stone 100%);
+    padding-top: 0;
+    padding-bottom: 38px;
+    background-image: linear-gradient(to bottom, #ffffff 23%, $color-stone 23%, $color-stone 100%);
   }
 
   .result__container {
@@ -372,19 +374,24 @@
   }
 
   .result__wrapper {
-    width: 610px;
+    width: 640px;
 
     &--text {
       width: 440px;
+      margin-bottom: 0;
     }
   }
 
   .result__title {
-    margin-bottom: 155px;
+    margin-bottom: 147px;
+  }
+
+  .result__data {
+    margin-bottom: 0;
   }
 
   .result__description {
-    margin-bottom: 75px;
+    margin-bottom: 67px;
   }
 
   .result__row--inline {
@@ -408,15 +415,15 @@
   }
 
   .result__before {
-    clip: rect(auto 305px auto auto);
+    clip: rect(auto 345px auto auto);
   }
 
   .result__after {
-    clip: rect(auto auto auto 305px);
+    clip: rect(auto auto auto 345px);
   }
 
   .result__сaption {
-    width: 610px;
-    padding-left: 40px;
+    width: auto;
+    padding-left: 73px;
   }
 }
