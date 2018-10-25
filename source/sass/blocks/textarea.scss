@@ -11,6 +11,11 @@
   font-style: normal;
   border: 1px solid #cdcdcd;
   resize: none;
+
+  &::placeholder {
+    color: $color-content;
+    opacity: 1;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
