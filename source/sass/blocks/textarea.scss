@@ -12,6 +12,14 @@
   border: 1px solid #cdcdcd;
   resize: none;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $color-content;
+  }
+
   &::placeholder {
     color: $color-content;
     opacity: 1;
