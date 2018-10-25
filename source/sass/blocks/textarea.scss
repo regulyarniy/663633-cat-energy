@@ -9,8 +9,13 @@
   color: $color-content;
   text-transform: uppercase;
   font-style: normal;
-  border-color: #cdcdcd;
+  border: 1px solid #cdcdcd;
   resize: none;
+
+  &::placeholder {
+    color: $color-content;
+    opacity: 1;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
