@@ -26,7 +26,7 @@
     background-size: 45px 13px;
   }
 
-  &--email:active {
+  &--email:focus {
     background-image: url("../img/icon-mail-green.svg");
   }
 
@@ -35,17 +35,16 @@
     background-size: 45px 20px;
   }
 
-  &--tel:active {
+  &--tel:focus {
     background-image: url("../img/icon-phone-green.svg");
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #cdcdcd;
   }
 
-  &:active {
-    border: 1px solid $color-content;
+  &:focus {
+    border: 2px solid $color-content;
   }
 
   &::placeholder {

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CAT ENERGY: Главная</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -42,7 +44,6 @@
               <a class="main-menu__link" href="form.html">Подбор программы</a>
             </div>
           </li>
-          </li>
         </ul>
       </nav>
   </header>
@@ -76,12 +77,12 @@
           <li class="categories__item">
             <h3 class="categories__title categories__title--slim">Похудение</h3>
             <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__link" href="#">Каталог Slim</a>
+            <a class="categories__link" href="catalog-slim.html">Каталог Slim</a>
           </li>
           <li class="categories__item">
             <h3 class="categories__title categories__title--gain">Набор массы</h3>
             <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories__link" href="#">Каталог pro</a>
+            <a class="categories__link" href="catalog-pro.html">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -149,11 +150,11 @@
             </picture>
           </div>
           <p class="result__сaption">
-            <span class="result__label">Было</span>
+            <button class="result__label" type="button">Было</button>
             <span class="result__progress-bar">
               <span class="result__progress-filler" tabindex="0"></span>
             </span>
-            <span class="result__label">Стало</span>
+            <button class="result__label" type="button">Стало</button>
           </p>
         </div>
       </div>
@@ -181,19 +182,19 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Vkontakte</span>
-              <svg width="22" height="12"><use xlink:href="#icon-vk-mobile"></use></svg>
+              <svg width="22" height="12"><use xlink:href="#icon-vk-mobile"/></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--ig" href="#">
               <span class="visually-hidden">Instagram</span>
-              <svg width="16" height="16"><use xlink:href="#icon-insta-mobile"></use></svg>
+              <svg width="16" height="16"><use xlink:href="#icon-insta-mobile"/></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg width="10" height="19"><use xlink:href="#icon-fb-mobile"></svg>
+              <svg width="10" height="19"><use xlink:href="#icon-fb-mobile"/></svg>
             </a>
           </li>
         </ul>
@@ -202,7 +203,7 @@
           <h4 class="visually-hidden">Сделано в</h4>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__title">HTML Academy</b>
-            <svg class="copyright__image" width="27" height="34"><use xlink:href="#htmlacademy"></svg>
+            <svg class="copyright__image" width="27" height="34"><use xlink:href="#htmlacademy"/></svg>
           </a>
         </section>
       </section>

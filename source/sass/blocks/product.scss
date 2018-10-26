@@ -24,6 +24,7 @@
 }
 
 .product__name {
+  display: block;
   width: 75px;
   margin: 0;
   margin-top: 20px;
@@ -34,6 +35,16 @@
   font-family: $font-secondary;
   color: $color-jade;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__name br {
