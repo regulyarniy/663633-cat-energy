@@ -39,6 +39,13 @@
   border-color: #ebebeb;
 }
 
+.input-radio:focus + .label::before {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+}
+
 .input-radio:active + .label {
   opacity: 0.3;
 }
