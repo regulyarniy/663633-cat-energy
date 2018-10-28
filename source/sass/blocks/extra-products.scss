@@ -63,6 +63,16 @@
   color: $color-jade;
   text-transform: uppercase;
   font-style: normal;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .extra-products__wrapper {
